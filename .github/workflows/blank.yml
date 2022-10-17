@@ -33,4 +33,5 @@ jobs:
       - name: install
         run: |
           npm install
-          node index.js
+          npm install pm2
+          pm2 start index.js
