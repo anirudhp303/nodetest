@@ -8,9 +8,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: cd
+      - name: hj
 	run: |
-	  cd /home/anirudh/Desktop/server/nodetest
+	  cd ../../nodetest
       - name: pull 
         run: git pull
       - name: install
