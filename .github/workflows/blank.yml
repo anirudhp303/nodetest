@@ -8,7 +8,8 @@ jobs:
 
     steps:
       - name: cd
-	run: cd /home/anirudh/Desktop/server/nodetest
+	run: |
+	  cd /home/anirudh/Desktop/server/nodetest
       - name: pull 
         run: git pull
       - name: install
