@@ -7,13 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: pul
-	working-directory: /home/anirudh/Desktop/server/nodetest 
-        run: git pull
-      - name: install
-        working-directory: /home/anirudh/Desktop/server/nodetest
-        run: npm install
-
-      - name: restart 
-	working-directory: /home/anirudh/Desktop/server/nodetest
-        run: node index.js
+      - uses: actions/checkout@v1
+      - name: pull
+	working-directory: ../../nodetest 
+        run: |
+		git pull
+		npm install
+		node index.js
