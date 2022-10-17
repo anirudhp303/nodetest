@@ -31,6 +31,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: install
-        run: |
-          npm install
-          pm2 start index.js
+        run: npm install
+      - name: start
+        run: pm2 start index.js
