@@ -33,4 +33,4 @@ jobs:
       - name: install
         run: npm install
       - name: start
-        run: bash ./pm2_runner.sh
+        run: bash ./pm2.sh
