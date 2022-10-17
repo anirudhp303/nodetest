@@ -1,5 +1,5 @@
 #!/bin/bash
-root="/home/anirudh/Desktop/nodetest/script"
+root="/home/anirudh/Desktop/server"
 echo $root
 cd $root
 echo -e '\e[1m\e[34mPulling code from remote..\e[0m\n'
